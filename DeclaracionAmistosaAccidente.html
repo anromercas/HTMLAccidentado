@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Declaracion Accidente</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header><h1>Declaración Amistosa de Accidente</h1></header>
+        <main>
+            <section>
+                <form action="." oninput="range_control_value.value = range_control.valueAsNumber"><form>
+                        Fecha del accidente: <input type="date" name="fecha_accidente"/>
+                        Hora: <input type="time" name="hora_accidente"/> 
+                        Localización (País): 
+                        <select name="pais_accidente">
+                            <option value="Espana">España</option>
+                            <option value="portugal">Portugal</option>
+                            <option value="alemania">Alemania</option>
+                            <option value="francia">Francia</option>
+                        </select>
+                        <br/>
+                        Víctima(s) incluso Leve(s):<br/>
+                        <input type="radio" name="victima" value="victima_si" > Si<br>
+                        <input type="radio" name="victima" value="victima_no"> No<br>
+                        <h3>daños materiales</h3>
+                        Vehiculos distintos de A y B:<br/>
+                        <input type="radio" name="victima" id="victima_si" value="victima_si" > Si<br>
+                        <input type="radio" name="victima" id="victima_no" value="victima_no"> No<br>
+                        Objetos distintos al vehiculo:<br/>
+                        <input type="radio" name="victima" id="victima_si" value="victima_si" > Si<br>
+                        <input type="radio" name="victima" id="victima_no" value="victima_no"> No<br>
+                        
+                        <table border ="1">
+                            <tr>
+                                <th>Datos</th>
+                                <th>Vehículo A</th>
+                                <th>Vehículo B</th>
+                            </tr>
+                            <tr>
+                                <td>Nombre:</td>
+                                <td><input type="text" name="nombre_a" id="nombre_a"/></td>
+                                <td><input type="text" name="nombre_b" id="nombre_b"/></td>
+                            <tr>
+                                <td>Apellidos</td>
+                                <td><input type="text" name="apellido_a" id="apellido_a"/></td>
+                                <td><input type="text" name="apellido_b" id="apellido_b"/></td>
+                            </tr>
+                            <tr>
+                                <td>Dirección:</td>
+                                <td><input type="text" name="direccion_a" id="direccion_a"/></td>
+                                <td><input type="text" name="direccion_b" id="direccion_b"/></td>
+                            </tr>
+                            <tr>
+                                <td>Código Postal</td>
+                                <td><input type="number" size="5" name="postal_a" id="postal_a"/></td>
+                                <td><input type="number" size="5" name="postal_b" id="postal_b"/></td>
+                            </tr>
+                            <tr>
+                                
+                            </tr>
+                        </table>
+                    </form> 
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
